@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <Script></Script>
+</head>
+
+<body>
+  <!--Responsive Navbar-->
+  <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl">GREENDEN</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="size-6 md:hidden">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-5 text-gray-600 hidden md:flex">
+      <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+      <li><a class="hover:underline hover:text-black" href="product.html">Products</a></li>
+      <li><a class="hover:underline hover:text-black" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+    <div class="p-4 mx-auto max-w-xl bg-white font-[sans-serif]">
+        <h1 class="text-3xl text-gray-800 font-extrabold text-center">Contact us</h1>
+        <form class="mt-8 space-y-4">
+            <input type='text' placeholder='Name'
+                class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+            <input type='email' placeholder='Email'
+                class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+            <input type='text' placeholder='Subject'
+                class="w-full rounded-md py-3 px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm outline-blue-500" />
+            <textarea placeholder='Message' rows="6"
+                class="w-full rounded-md px-4 text-gray-800 bg-gray-100 focus:bg-transparent text-sm pt-3 outline-blue-500"></textarea>
+            <button type='button'
+                class="text-white bg-green-300 hover:bg-blue-600 tracking-wide rounded-md text-sm px-4 py-3 w-full">Send</button>
+        </form>
+    </div>
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">Greenden</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, rerum! Deserunt animi dignissimos modi
+            doloribus error eaque vero dolor, amet cum voluptate facilis aliquid enim at explicabo, excepturi quam
+            doloremque.</p>
+        <p>@2021 GREENDEN.COM</p>
+    </section>
+
+
+</body>
+
+</html>
