@@ -1,0 +1,18 @@
+<script>
+    var productContainer = document.getElementById("product-container");
+var search = document.getElementById("search");
+var productlist = productContainer.querySelectorAll("div");
+
+search.addEventListener("keyup", function () {
+    var enteredValue = this.value.toUpperCase();
+
+    for (var count = 0; count < productlist.length; count++) {
+        var productname = productlist[count].querySelector("h1").textContent;
+        if (productname.toUpperCase().indexOf(enteredValue) < 0) {
+            productlist[count].style.display = "none";
+        } else {
+            productlist[count].style.display = "block";
+        }
+    }
+});
+</script>

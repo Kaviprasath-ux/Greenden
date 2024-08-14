@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="search">
+    <div id="container">
+        <h1>One</h1>
+        <h1>Two</h1>
+        <h1>Three</h1>
+        <h1>Four</h1>
+        <h1>Five</h1>
+        <h1>Six</h1>
+        <h1>Seven</h1>
+        <h1>Eight</h1>
+        <h1>Nine</h1>
+        <h1>Ten</h1>
+    </div>
+</body>
+<script>
+    var search = document.getElementById("search");
+    var container = document.getElementById("container");
+    var h1list = container.getElementsByTagName('h1');
+
+    search.addEventListener("keyup", function(){
+        var enteredValue = search.target.value.toLowerCase();
+    
+
+        for (var i = 0; i < h1list.length; i++) {
+                var itemText = h1list[i].textContent.toLowerCase();
+                if (itemText.indexOf(searchTerm) !== -1) {
+                    h1list[i].style.display = '';
+                } else {
+                    [i].style.display = 'none';
+                }
+            }
+
+    })
+</script>
+</html>
